@@ -1,0 +1,100 @@
+module ID_STAGE (
+input         clk,
+input         rst,
+input         ID_Zero,
+input         ID_RegWriteEn,
+input [2:0]   ID_RegWriteDest,
+input [15:0]  ID_RegWriteData,
+input [15:0]  ID_In,
+input [15:0]  ID_Controller,
+output [15:0] ID_AluSrc1,
+output [15:0] ID_AluSrc2,
+output [15:0] ID_MemWriteData,
+output [2:0]  ID_RFWriteBackDest,
+output        ID_MemWriteEn,
+output        ID_WriteBackResultMux,
+output        ID_RFWriteBackEn,
+output [3:0]  ID_ALUCmd,
+output        ID_jump,
+output        ID_branch,
+output  [2:0] ID_op1,
+output  [2:0] ID_op2
+);
+
+wire [15:0] sixteenExtended;
+
+wire RFWriteDestMux;
+wire Add2Mux;
+wire Data2Mux;
+wire MemWriteDataMux;
+
+wire [2:0] Add2MuxAddress;
+
+wire [15:0] RegisterFileData2;
+
+ 
+SixToSixteen mySixToSixteen(
+ .In(ID_In[5:0]),
+ .Out(sixteenExtended)
+);
+
+MUX2 #(16) myData2Mux2( 
+  .SLCT(Data2Mux),
+  .IN1(sixteenExtended),
+  .IN0(RegisterFileData2), 
+  .OT(ID_AluSrc2)
+);
+
+MUX2 #(3) myAdd2Mux2( 
+  .SLCT(Add2Mux),
+  .IN1(ID_In[11:9]),
+  .IN0(ID_In[5:3]), 
+  .OT(Add2MuxAddress)
+);
+
+assign ID_op1 = ID_In[8:6];
+assign ID_op2 = Add2MuxAddress;
+
+RegisterFile myRegisterFile(
+  .clk(clk),
+  .rst(rst),
+  .rg_wrt_enable(ID_RegWriteEn),
+  .rg_wrt_dest(ID_RegWriteDest),
+  .rg_wrt_data(ID_RegWriteData),
+  .rg_rd_addr1(ID_In[8:6]),
+  .rg_rd_data1(ID_AluSrc1),
+  .rg_rd_addr2(Add2MuxAddress),
+  .rg_rd_data2(RegisterFileData2)
+);
+
+MUX2 #(16) myMemWriteDataMux2( 
+  .SLCT(MemWriteDataMux),
+  .IN1(RegisterFileData2),
+  .IN0(16'b0), 
+  .OT(ID_MemWriteData)
+);
+
+MUX2 #(3) myWriteDestMux2( 
+  .SLCT(RFWriteDestMux),
+  .IN1(ID_In[11:9]), 
+  .IN0(3'b0),
+  .OT(ID_RFWriteBackDest)
+);
+
+CONTROLLER  myController(
+  .clock(clk),
+  .In(ID_Controller),
+  .Zero(ID_Zero),
+  .alu_cmd(ID_ALUCmd),
+  .rf_write_back_en(ID_RFWriteBackEn),
+  .write_back_result_mux(ID_WriteBackResultMux),
+  .mem_write_en(ID_MemWriteEn),
+  .rf_write_dest_mux(RFWriteDestMux),
+  .add_2_mux(Add2Mux),
+  .data_2_mux(Data2Mux),
+  .mem_write_mux(MemWriteDataMux),
+  .branchEn(ID_branch),
+  .jump(ID_jump)
+);
+
+endmodule

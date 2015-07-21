@@ -1,0 +1,162 @@
+{D:/P ,A,/12/CAL/PR2/PASSPRJ/ID_EX.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/ID_EX.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module ID_EX
+
+Top level modules:
+	ID_EX
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/HAZARD.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/HAZARD.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module HAZARD
+
+Top level modules:
+	HAZARD
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/IF_STAGE.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/IF_STAGE.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module IF_STAGE
+
+Top level modules:
+	IF_STAGE
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/ALU.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/ALU.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/IF_ID.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/IF_ID.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module IF_ID
+
+Top level modules:
+	IF_ID
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/RegisterFile.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/RegisterFile.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/MEM_WB.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/MEM_WB.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module MEM_WB
+
+Top level modules:
+	MEM_WB
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/SixToEightExtend.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/SixToEightExtend.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module SixToEightExtend
+
+Top level modules:
+	SixToEightExtend
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/Add.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/Add.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module Add
+
+Top level modules:
+	Add
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/MEM_STAGE.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/MEM_STAGE.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module MEM_STAGE
+
+Top level modules:
+	MEM_STAGE
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/DataMemory.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/DataMemory.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/InstructionMemory.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/InstructionMemory.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module InstructionMemory
+
+Top level modules:
+	InstructionMemory
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/PC.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/PC.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/EX_MEM.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/EX_MEM.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module EX_MEM
+
+Top level modules:
+	EX_MEM
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/MUX2.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/MUX2.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module MUX2
+
+Top level modules:
+	MUX2
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/WB_STAGE.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/WB_STAGE.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module WB_STAGE
+
+Top level modules:
+	WB_STAGE
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/CONTROLLER.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/CONTROLLER.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module CONTROLLER
+
+Top level modules:
+	CONTROLLER
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/MUX4.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/MUX4.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module MUX4
+
+Top level modules:
+	MUX4
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/Project.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/Project.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module Project
+
+Top level modules:
+	Project
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/SixToSixteen.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/SixToSixteen.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module SixToSixteen
+
+Top level modules:
+	SixToSixteen
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/ID_STAGE.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/ID_STAGE.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module ID_STAGE
+
+Top level modules:
+	ID_STAGE
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/bench.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/bench.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module bench
+
+Top level modules:
+	bench
+
+} {} {}} {D:/P ,A,/12/CAL/PR2/PASSPRJ/EX_STAGE.v} {1 {vlog -work work -nocovercells {D:/P ,A,/12/CAL/PR2/PASSPRJ/EX_STAGE.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module EX_STAGE
+
+Top level modules:
+	EX_STAGE
+
+} {} {}}
